@@ -1,0 +1,631 @@
+.ocultoDiv{
+	/*width: 100%;*/
+	display: none;
+}
+
+	.ocultoDiv table {
+		width: 60%;
+		/*margin-left: 20%;
+		margin-right: 20%;*/
+		text-align: center;
+		color: white;
+	}
+
+	.ocultoDiv table td button{
+		margin: 5px;
+	}
+
+	.btncs{
+		margin: 5px;
+	}
+
+
+	@media (max-width: 2500px){
+
+		.LDPcantedt::before{
+			content:"Cantidad";
+			display: block;
+			text-align: center;
+			font-size: .9rem;
+			margin: 0 -6px;
+		
+		}
+		.LDPprecedt::before{
+			content:"Precio";
+			display: block;
+			text-align: center;
+			font-size: .9rem;
+			margin: 0 -6px;
+		
+		}
+		.LDPenvedt::before{
+			content:"Envio";
+			display: block;
+			text-align: center;
+			font-size: .9rem;
+			margin: 0 -6px;
+		
+		}
+		.LDLfechedt::before{
+			content:"Fecha";
+			display: block;
+			text-align: center;
+			font-size: .9rem;
+			margin: 0 -6px;
+		
+		}
+		.LDLfacedt::before{
+			content:"Factura";
+			display: block;
+			text-align: center;
+			font-size: .9rem;
+			margin: 0 -6px;
+		
+		}
+		.LDLcantedt::before{
+			content:"Cantidad";
+			display: block;
+			text-align: center;
+			font-size: .9rem;
+			margin: 0 -6px;
+		
+		}
+
+
+		#modelotb::before{
+			content:"Modelo";
+			display: block;
+			text-align: center;
+	
+		}
+		.col-sm-12 {
+			-ms-flex: 0 0 98%;
+			flex: 0 0 98%;
+			max-width: 98%;
+			padding-left: 20px;
+		}
+		td{
+			font-size: .9rem;
+			text-align: center;
+		}
+		th{
+			text-align: center;
+		}
+		.im-01{
+			margin: 0 5px 10px 5px;
+		}
+		.col-md-3p {
+			-ms-flex: 0 0 25%;
+			flex: 0 0 31%;
+			max-width: 31%;
+		}
+
+		.LDPbtonedt{
+			
+			margin: 2px 0 2px;
+	
+		}
+
+	}
+
+	@media (max-width: 992px){
+		.im-01{
+			margin: 0 5px 10px 5px;
+		}
+		.col-md-3p {
+			-ms-flex: 0 0 25%;
+			flex: 0 0 31%;
+			max-width: 31%;
+		}
+	}
+
+	@media (max-width: 767px){
+		.im-01{
+			margin: 0 2px 10px 2px;
+		}
+		.col-md-3p {
+			-ms-flex: 0 0 25%;
+			flex: 0 0 32%;
+			max-width: 32%;
+		}
+		.col-md-11 {
+			-ms-flex: 0 0 90%;
+			flex: 0 0 90%;
+			max-width: 90%;
+		}
+		.col-md-1 {
+			position: relative;
+			width: 8%;
+			padding-right: 7.5px;
+			padding-left: 7.5px;
+		}
+	}
+
+@media (max-width: 514px){
+
+	.im-01{
+		margin: 0 3px 10px 3px;
+	}
+	.col-md-3p {
+		-ms-flex: 0 0 25%;
+		flex: 0 0 98%;
+		max-width: 98%;
+	}
+	
+	.col-sm-12 {
+		-ms-flex: 0 0 98%;
+		flex: 0 0 98%;
+		max-width: 98%;
+		padding-left: 10px;
+	}
+	p{
+		font-size: .8rem;
+	}
+	th{
+		font-size: .9rem;
+		text-align: center;
+	}
+	td{
+		font-size: .9rem;
+		text-align: center;
+	}
+	#modelotb::before{
+		content:"Mdl";
+		display: block;
+		text-align: center;
+
+	}
+	.LDPcantedt::before{
+		content:"Cant";
+		display: block;
+		text-align: center;
+		font-size: .9rem;
+		margin: 0 -6px;
+
+	}
+	.LDPprecedt::before{
+		content:"Prec";
+		display: block;
+		text-align: center;
+		font-size: .9rem;
+		margin: 0 -6px;
+
+	}
+	.LDPenvedt::before{
+		content:"Env";
+		display: block;
+		text-align: center;
+		font-size: .9rem;
+		margin: 0 -6px;
+		
+	}
+	.LDPbtonedt{
+		font-size: .8rem;
+		padding: 1px;
+		margin: 2px 0 2px;
+
+	}
+	.LDPedtcont{
+		font-size: .7rem;
+	}
+	.LDLfechedt::before{
+		content:"Fech";
+		display: block;
+		text-align: center;
+		font-size: .8rem;
+		margin: 0 -6px;
+	
+	}
+	.LDLfacedt::before{
+		content:"Fact";
+		display: block;
+		text-align: center;
+		font-size: .8rem;
+		margin: 0 -6px;
+	
+	}
+	.LDLcantedt::before{
+		content:"Cant";
+		display: block;
+		text-align: center;
+		font-size: .8rem;
+		margin: 0 -6px;
+	
+	}
+	.nombreb, .fototb{
+		display: none;
+	}
+
+	.modelotb{
+		font-size: 0.8em;
+	}
+		
+}
+.bd-example {
+    position: relative;
+    padding: 1rem;
+    margin: 1rem -15px 0;
+    border: solid #f7f7f9;
+    border-width: .2rem 0 0;
+}
+
+.lbl-menu{
+	width: 50px;
+	height: 30px;
+	position: relative;
+	cursor: pointer;
+}
+
+.lbl-menu #sp1, #sp2{
+	position: absolute;
+	content: "";
+	background: rgb(34, 177, 202);
+	width: 20px;
+	height: 5px;
+	border-radius: 5px;
+	transition: all 400ms ease;
+}
+
+#sp1{
+	top: 22px;
+}
+#sp2{
+	top: 22px;
+	transform: rotate(90deg);
+}
+
+#btn-mendes{
+	display: none;
+}
+
+.lbl-menumo{
+	width: 50px;
+	height: 30px;
+	position: relative;
+	cursor: pointer;
+}
+
+.lbl-menumo #sp1mo, #sp2mo{
+	position: absolute;
+	content: "";
+	background: rgb(34, 177, 202);
+	width: 20px;
+	height: 5px;
+	border-radius: 5px;
+	transition: all 400ms ease;
+}
+
+#sp1mo{
+	top: 30px;
+}
+#sp2mo{
+	top: 30px;
+	transform: rotate(90deg);
+}
+
+#btn-mendesmo{
+	display: none;
+}
+#btn-mendesmo:checked ~.lbl-menumo #sp2mo{
+	transform: rotate(0deg);
+}
+
+#btn-mendes:checked ~.lbl-menu #sp2{
+	transform: rotate(0deg);
+}
+
+
+.lbl-menup{
+	width: 50px;
+	height: 30px;
+	position: relative;
+	cursor: pointer;
+}
+
+.lbl-menup #sp1p, #sp2p{
+	position: absolute;
+	content: "";
+	background:  rgb(34, 177, 202);
+	width: 20px;
+	height: 5px;
+	border-radius: 5px;
+	transition: all 400ms ease;
+}
+
+#btn-mendesm{
+	display: none;
+}
+
+#btn-mendesm:checked ~.lbl-menum #sp2m{
+	transform: rotate(0deg);
+}
+
+.lbl-menum{
+	width: 50px;
+	height: 30px;
+	position: relative;
+	cursor: pointer;
+}
+.lbl-menum #sp1m, #sp2m{
+	position: absolute;
+	content: "";
+	background:  rgb(34, 177, 202);
+	width: 20px;
+	height: 5px;
+	border-radius: 5px;
+	transition: all 400ms ease;
+}
+#sp1m{
+	top: 22px;
+}
+#sp2m{
+	top: 22px;
+	transform: rotate(90deg);
+}
+
+/* -----------  CSS DATOS DE ENVIO  ----------- */
+
+#btn-mendesEnvio{
+	display: none;
+}
+
+#btn-mendesEnvio:checked ~.lbl-menuEnvio #sp2Envio{
+	transform: rotate(0deg);
+}
+
+.lbl-menuEnvio{
+	width: 50px;
+	height: 30px;
+	position: relative;
+	cursor: pointer;
+}
+.lbl-menuEnvio #sp1Envio, #sp2Envio{
+	position: absolute;
+	content: "";
+	background:  rgb(34, 177, 202);
+	width: 20px;
+	height: 5px;
+	border-radius: 5px;
+	transition: all 400ms ease;
+}
+#sp1Envio{
+	top: 22px;
+}
+#sp2Envio{
+	top: 22px;
+	transform: rotate(90deg);
+}
+
+/* CSS DATOS DE FACTURACION PRODUCTO */
+
+#btn-mendesSAT{
+	display: none;
+}
+
+#btn-mendesSAT:checked ~.lbl-menuSAT #sp2SAT{
+	transform: rotate(0deg);
+}
+
+.lbl-menuSAT{
+	width: 50px;
+	height: 30px;
+	position: relative;
+	cursor: pointer;
+}
+.lbl-menuSAT #sp1SAT, #sp2SAT{
+	position: absolute;
+	content: "";
+	background:  rgb(34, 177, 202);
+	width: 20px;
+	height: 5px;
+	border-radius: 5px;
+	transition: all 400ms ease;
+}
+#sp1SAT{
+	top: 22px;
+}
+#sp2SAT{
+	top: 22px;
+	transform: rotate(90deg);
+}
+
+/* -----------  CSS DATOS DE ENVIO EDITAR  ----------- */
+
+#btn-mendesEnvioEditar{
+	display: none;
+}
+
+#btn-mendesEnvioEditar:checked ~.lbl-menuEnvioEditar #sp2EnvioEditar{
+	transform: rotate(0deg);
+}
+
+.lbl-menuEnvioEditar{
+	width: 50px;
+	height: 30px;
+	position: relative;
+	cursor: pointer;
+}
+.lbl-menuEnvioEditar #sp1EnvioEditar, #sp2EnvioEditar{
+	position: absolute;
+	content: "";
+	background:  rgb(34, 177, 202);
+	width: 20px;
+	height: 5px;
+	border-radius: 5px;
+	transition: all 400ms ease;
+}
+#sp1EnvioEditar{
+	top: 22px;
+}
+#sp2EnvioEditar{
+	top: 22px;
+	transform: rotate(90deg);
+}
+
+
+/*=====================================
+=            CSS DERIVADOS            =
+=====================================*/
+
+#btn-mendesEnvioDerivado{
+	display: none;
+}
+
+#btn-mendesEnvioDerivado:checked ~.lbl-menuEnvioDerivado #sp2EnvioDerivado{
+	transform: rotate(0deg);
+}
+
+.lbl-menuEnvioDerivado{
+	width: 50px;
+	height: 30px;
+	position: relative;
+	cursor: pointer;
+}
+.lbl-menuEnvioDerivado #sp1EnvioDerivado, #sp2EnvioDerivado{
+	position: absolute;
+	content: "";
+	background:  rgb(34, 177, 202);
+	width: 20px;
+	height: 5px;
+	border-radius: 5px;
+	transition: all 400ms ease;
+}
+#sp1EnvioDerivado{
+	top: 22px;
+}
+#sp2EnvioDerivado{
+	top: 22px;
+	transform: rotate(90deg);
+}
+
+/*=====  End of CSS DERIVADOS  ======*/
+
+
+#sp1p{
+	top: 22px;
+}
+#sp2p{
+	top: 22px;
+	transform: rotate(0deg);
+}
+
+#btn-mendesp{
+	display: none;
+}
+
+#btn-mendesp:checked ~.lbl-menup #sp2p{
+	transform: rotate(90deg);
+}
+
+.catys{
+	text-align: center;
+	background-color: #343A40;
+	border-radius: 2px;
+	margin: -12px -21px 5px -21px;
+	color: white;
+}
+.titprod{
+	color: #5f5f5f;
+	font-family: "Segoe UI";
+	font-size: 15px;
+}
+
+.tittle-sec{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0 0 15px;
+	text-align: center;
+}
+
+input[type="file"]{
+	display: none;
+}
+.chose-img{
+	color: rgb(255, 255, 255);
+	height: auto;
+	font-size: .8rem;
+}
+
+.titimg{
+	color: #5f5f5f;
+	font-family: "Segoe UI";
+	font-size: 18px;
+	margin-top: 15px;
+}
+.galeria{
+	object-fit: contain; 
+	height: auto;
+	width: auto;
+}
+.navcl{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav-tabs .nav-link.active {
+    border-top-left-radius: 20px;
+    font-family: 'Source Sans Pro';
+    font-weight: 800;
+	font-size: large;
+	transition: all 200ms ease;
+}
+.nav-tabs .nav-link {
+    border-top-left-radius: 20px;
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+	font-size: 16px;
+	color: #22b1ca;
+}
+.heigtbtn{
+	height: 100%;
+	font-weight: 600;
+}
+.elimP{
+    margin-top: 5px;
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+}
+.btnlyd{
+	margin-bottom: 5px;
+}
+.ldp{
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #ffffff;
+	background-clip: padding-box;
+	text-align: center;
+}
+
+.ldpbtn {
+	color: transparent !important;
+}
+
+
+
+
+
+
+@media (max-width: 2200px){
+	#ocultarTHfecha{
+		display: block flow;
+	}
+
+	#ocultarTDfecha{
+		display: block flow;
+
+	}
+}
+
+@media (max-width: 600px){
+
+	#ocultarTHfecha{
+		display: none;
+	}
+
+	#ocultarTDfecha{
+		display: none;
+	}
+
+}

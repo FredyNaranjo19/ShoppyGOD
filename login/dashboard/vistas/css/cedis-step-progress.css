@@ -1,0 +1,255 @@
+.contenedor-step * {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #7a90fd;
+} */
+
+.contenedor-principal{
+  
+    margin-top: auto;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #7a90fd; */
+}
+
+.container-steeps {
+    
+
+    min-height: 300px;
+    padding: 25px;
+    width: 1000px;
+    background: #eceff8;
+    border: 1px solid;
+    /* box-shadow: 6px 2px 4px #eceff8, 4px 3px 30px #000; */
+    /* padding: 0px; */
+    text-align: center;
+}
+
+.container-steeps .count {
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+
+.container-steeps .count .step{
+    
+
+    height: 50px;
+    width: 50px;
+    background: #e1fdff;
+    border: 2px solid rgb(14, 215, 255);
+    border-radius: 50%;
+    padding: 15px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+/* .count .step:hover {
+    background: #32364d;
+    color: rgb(212, 13, 179);
+} */
+
+.count .step.active {
+    border: 2px solid rgb(14, 215, 255);
+    border-radius: 50%;
+    background: rgb(1, 146, 175);
+    color: #ffffff;
+}
+
+.count .step::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    height: 2px;
+    width: 180px;
+    background: rgb(14, 215, 255);
+}
+
+.count .step:last-child::before {
+    display: none;
+}
+
+.content .title-content {
+    margin: 10px 0px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content .text-content {
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 18px;
+    color: #3c4d50;
+}
+
+.content .button-content {
+    padding: 15px 80px;
+    margin-top: 20px;
+    background:#00b4d8ff;
+    color: rgb(243, 237, 237);
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.content .button-content:hover {
+    background: rgb(14, 215, 255);
+    color: rgb(255, 255, 255);
+}
+
+
+.content .button-disabled{
+    padding: 15px 80px;
+    margin-top: 20px;
+    background: rgb(2, 134, 160);
+    color: rgb(221, 208, 208);
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: not-allowed;
+}
+
+.content .button-success{
+    padding: 15px 80px;
+    margin-top: 20px;
+    background: rgb(22 187 7);
+    color: rgb(243 230 230);
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: not-allowed;
+}
+
+.content.second,
+.content.third,
+.content.four,
+.content.alterno {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .container-steeps {
+        width: auto;
+        padding: 10px;
+        margin: 0px;
+    }
+    .count .step::before {
+        width: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .count .step::before {
+        width: 89px;
+    }
+}
+
+.disabled-element
+{
+    cursor: not-allowed;
+    /* background-color:#060727 !important; */
+    pointer-events:none;
+}
+
+.cambioCursor {
+    cursor: pointer;
+}
+
+
+/*======================================================================================
+=                   ESTILOS DE STEP-PROGRESS DE LINK WEB POR VALORAR                   =
+======================================================================================*/
+.container-steeps .steps-actuales {
+    
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+
+.container-steeps .steps-actuales .step{
+    
+
+    height: 50px;
+    width: 50px;
+    background: #e1fdff;
+    border: 2px solid rgb(14, 215, 255);
+    border-radius: 50%;
+    padding: 15px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.steps-actuales .step.active {
+    border: 2px solid rgb(14, 215, 255);
+    border-radius: 50%;
+    background: rgb(1, 146, 175);
+    color: #ffffff;
+}
+
+
+/* asi sera para link-web por valorar */
+.steps-actuales .step::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    height: 2px;
+    width: 180px;
+    background: rgb(14, 215, 255);
+}
+
+.steps-actuales .step:last-child::before {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .container-steeps {
+        width: auto;
+        margin: 0px;
+    }
+    .steps-actuales .step::before {
+        width: 90px;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .steps-actuales .step::before {
+        width: 70px;
+    }
+}
+
+
+
+/*============  End of ESTILOS DE STEP-PROGRESS DE LINK WEB POR VALORAR  =============*/

@@ -1,0 +1,19 @@
+.agrupacionProductosFactura{
+	min-height: 350px; 
+	max-height: 350px; 
+	overflow:scroll;
+}
+
+	.agrupacionProductosFactura table{
+		text-align: center; 
+		width: 100%; 
+		height: 100%;
+	}
+
+		.agrupacionProductosFactura table .thNumero{
+			min-width: 120px;
+		}
+
+.btnRealizarFacturar{
+	margin-top: 5px;
+}

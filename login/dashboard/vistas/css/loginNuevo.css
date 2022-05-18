@@ -1,0 +1,866 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.barra{
+    font-family: 'Montserrat', sans-serif;
+}
+
+    .barra .enlaces{
+        color: white;
+        font-size: small;
+        text-decoration: none;
+        
+    }
+    .barra .nav-link:hover{
+        text-decoration: underline!important;
+        font-weight: 600;
+        
+    }
+    .barra .nav-link:focus{
+        text-decoration: underline!important;
+        font-weight: 600;
+        
+    }
+    .barra .rl{
+        font-weight: 600;
+    }
+    .barra .logoLogin{
+        height: 2rem;
+        place-self: center;
+    }
+    .barra .logoyira{
+        height: 3rem;
+        place-self: center;
+        width: 90px;
+    }
+
+.posicion{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+}
+.espacio{
+    padding-top: 75px;
+    margin-bottom: -1%;
+}
+
+.contenedores{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+    .img1{
+        display: none;
+        height: 100%;
+        width: 100vw;
+        filter: brightness(0.7);
+
+    }
+    .img1herramientas{
+        display: none;
+        height: 100%;
+        width: 100vw;
+        filter: brightness(0.9);
+    }
+    .txt1{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        position: absolute;
+        top: 30%;
+        left: 36%;
+        color: white;
+    }
+    .txt2{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        position: absolute;
+        top: 40%;
+        left: 38%;
+        color: white;
+    }
+    .txt3{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        position: absolute;
+        top: 40%;
+        font-size: x-large;
+        left: 10%;
+        color: black;
+
+    }
+    .txt4{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        position: absolute;
+        top: 45%;
+        font-size: x-large;
+        left: 7%;
+        color: black;
+
+    }
+    .txt5{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        position: absolute;
+        top: 54%;
+        font-size: x-large;
+        left: 8%;
+        color: black;
+
+    }
+    .txt6{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        position: absolute;
+        top: 58%;
+        font-size: x-large;
+        left: 11%;
+        color: black;
+
+    }
+    .txt62{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        position: absolute;
+        top: 62%;
+        left: 12%;
+        font-size: x-large;
+        color: black;
+
+    }
+    .txt7{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 100;
+        position: absolute;
+        font-size: xxx-large;
+        top: 20%;
+       
+    }
+    .recorte1{
+        height: 35rem;
+        position: absolute;
+        left: 55%;
+        top: 13%;
+    }
+    .recorte2{
+        height: 95vh;
+        position: absolute;
+        top: 20%;
+        z-index: -1;
+        left: -17%;
+    }
+    .recorte3{
+        height: 75vh;
+        position: absolute;
+        bottom: -15%;
+        z-index: -1;
+        left: 5%;
+    }
+    .lista{
+        font-family: 'Montserrat', sans-serif;
+        position: absolute;
+        top: 20%;
+        left: 7%;
+        list-style: none;
+    }
+    .lista2{
+        font-family: 'Montserrat', sans-serif;
+        position: absolute;
+        top: 55%;
+    }
+
+    .txt8{
+        font-size: larger;
+        font-weight: 600;
+    }
+    .txt9{
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        position: absolute;
+        font-size: 4rem;
+        top:45%;
+        right: 10%;
+
+    }
+    .txt10{
+        font-size: medium;
+        font-weight: 500;
+        color: white;
+
+    }
+    .txt11{
+        color: black;
+        position: absolute;
+        font-weight: 100;
+        font-family:'Montserrat', sans-serif ;
+        font-size: 2.5rem;
+        top: 50%;
+        right: 15%;
+
+    }
+    .txt12{
+        color: #00b4d8;
+        position: absolute;
+        top: 58%;
+        right: 6%;
+        font-weight: 600;
+        font-size: 4rem;
+        font-family: 'Montserrat';
+
+    }
+    .txt13{ 
+        color: black;
+        position: absolute;
+        top: 69%;
+        right: 14%;
+        font-family: 'Montserrat';
+        font-weight: 100;
+        font-size: 2.5rem;
+
+    }
+    .icono1{
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        height: 80px;
+    }   
+    .icono2{
+        position: absolute;
+        top: 15%;
+        height: 158px;
+        left: 6%;
+        filter: invert(1);
+    }
+    .iconoslista{
+        height: 20px;
+        filter: invert(1); 
+        margin-right: 15px;
+    }
+    .btn1{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        position: absolute;
+        top: 55%;
+        left: 44%;
+        background-color: #00b4d8;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: white;
+        border-radius: 15px;
+        height: 2.5rem;
+        width: 8rem;
+        text-align: center;
+    }
+    .btn1:hover{
+        color: #FDFFFC;
+        background-color: #00c5ec;
+    }
+
+    .video{
+        height: 804px;
+        width: 125vw;
+        left: -16%;
+        top: -36px;
+        position: relative;
+        filter: brightness(50%);
+    }
+    .loginbar{
+        display: grid;
+        position: absolute;
+        height: 100%;
+        width: 350px;
+        top: 0%;
+        right: 0%;
+        color: white;
+        background-color: black;
+        /* background-image: url(/img/FONDO-CELULAR.jpg); */
+        text-align: center;
+        align-content: flex-start;
+        justify-items: center;
+    }
+    .imputlogin{
+            border-radius: 0px;
+            background-color: transparent;
+            border: groove;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            color: white;
+    }
+    .espaciolista{
+        margin-top: 20px;
+    }
+.usrcont{
+    font-family: 'Montserrat', sans-serif;
+    font-size: inherit;
+    margin-top: 30px;
+}
+.transcont{
+    width: 98vw;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+}
+.enlacespos{
+    display: flex;
+}
+.contactoimg{
+    overflow: hidden;
+    height: 450px;
+}
+.carouselmobile{
+    display: none;
+}
+.iniciocontenedor{
+    max-width:100vw;
+    height: 600px;
+    overflow: hidden;
+}
+.inicioimg{
+    height: 100vh;
+    filter: brightness(70%);
+}
+.ocultarcar{
+    display: inline;
+}
+.contactomobile{
+    display: none;
+}
+.contactofooter{
+    background-color: #0A090C;
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+}
+.contactof{
+    margin-left: 25px;
+    color: white;
+    font-family: 'Montserrat';
+    padding-top: 20px;
+}
+.contactof2{
+    padding-top: 55px;
+    text-align: center;
+    margin-left: 70px;
+    color: white;
+    font-family: 'Montserrat';
+}
+.txt1f{
+    font-weight: 900;
+    font-size: 25px;
+}
+.txt2f{
+    font-size: small;
+    margin-top: 5px;
+    font-weight: 600;
+}
+.txt3f{
+    font-size: smaller;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.enlacep{
+    color: white;
+}
+.enlacep:hover{
+    color: white;
+}
+.txt7mobile, .txt7mobile2, .txt7mobile3{
+    display: none;
+}
+.d-flexl{
+    display: flex;
+}
+.conocenos, .icono1mobile, .listamobile, .iconosmobile, .icono2mobile, .desdemobile, .accordionmobile, .btnwhatsappm{
+    display: none;
+}
+.barragif{
+    display: none;
+}
+.contactobg{
+    background-color: transparent;
+    height: 75vh;
+}
+.carouseltxt1{
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+.carouseltxt2{
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+.carouselherramientas{
+    margin-top: 5rem;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    filter: invert(1);
+}
+.btnwhatsapp{
+    position: absolute;
+    right: 18%;
+    top: 70%;
+    color: black;
+    font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 2rem;
+}
+.btnwhatsapp:hover{
+    position: absolute;
+    right: 18%;
+    top: 70%;
+    color: black;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 2rem;
+}
+.barrahead{
+    margin-top: -23px;
+}
+.icono1desktop{
+    height: 4rem; 
+    position: absolute; 
+    right: 49%; 
+    top: 15%;
+}
+    @media only screen and (max-width: 850px) {
+        body{
+            background: black!important;
+        }
+        .contactobg{
+            background-color: black;
+            height: 100vh;
+        }
+        .btnwhatsappm{
+            display:inline;
+            position: absolute;
+            top: 40%;
+            left: 0%;
+            width: 100vw;
+            text-align: center;
+            color: white;
+            font-family: 'Montserrat';
+            font-weight: 100;
+            font-size: 2rem;
+        }
+        .listamobile{
+            display: inline;
+            position: absolute;
+            top: 25%;
+            color: white;
+            list-style: none;
+            padding: 0;
+            left: 0%;
+            width: 100vw;
+        }
+        .fondo{
+            background-size: cover;
+            position: relative;
+            display: grid;
+        }
+        .d-flexl{
+            display: unset;
+        }
+        .img1, .img1herramientas, .carouselherramientas, .barrahead, .icono1desktop{
+            display: none;
+        }
+        .inicioimg{
+            height: 100%;
+        }
+        .icono1{
+            top: 10%;
+            height: 80px;
+            right: 40%;
+        }
+        .recorte3, .recorte2{
+            display: none;
+        }
+        .txt1{
+            color: black;
+            top: 25%;
+            left: 0%;
+            text-align: center;
+            width: 100vw;
+        }
+        .txt2{
+            color: black;
+            top: 40%;
+            left: 0%;
+            text-align: center;
+            width: 100vw;
+        }
+        .txt3{
+            top: 25%;
+            right: 0%;
+            text-align: -webkit-center;
+        }
+        .txt4{
+            text-align: -webkit-center;
+            top: 35%;
+            font-weight: 600;
+        }
+        .txt5{
+            top: 55%;
+            font-weight: 600;
+            text-align: -webkit-center;
+        }
+        .txt6{
+            top: 70%;
+            font-weight: 600;
+            text-align: -webkit-center;
+        }
+        .txt7{
+            display: none;
+        }
+        .txt7mobile{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            position: absolute;
+            font-size: xx-large;
+            top: 5%;
+            display:inline;
+            text-align: left;
+            left: 4%;
+            color: white;
+        }
+        .txt7mobile2{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            position: absolute;
+            font-size: xx-large;
+            top: 10%;
+            display:inline;
+            text-align: left;
+            left: 4%;
+            color: white;
+        }
+        .txt7mobile3{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            position: absolute;
+            font-size: xx-large;
+            top: 15%;
+            display:inline;
+            text-align: left;
+            left: 4%;
+            color: white;
+        }
+        .txt7mobile4{
+            color: white;
+            font-size: 17px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            margin-left: 2%;
+            margin-bottom: 5%;
+        }
+        .txt7mobile5{
+            color: white;
+            font-size: 17px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            margin-left: 2%;
+        }
+        .txt8{
+            font-size: 1.5rem;
+        }
+        .txt9{
+            font-size: 2.5rem;
+            color: white;
+            left: 0%;
+            width: 100vw;
+            text-align: center;
+            top: 30%;
+        }
+        .txt11{
+            margin-top: 50%;
+        }
+        .blink_me, .blink_me span{
+            display: none;
+        }
+        .iconoslista{
+            filter: none;
+            height: 40px;
+            margin: 50px;
+        }
+        .btn1{
+            top:60%;
+            left: 35%;
+            color: white;
+        }
+        .btn3{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            position: absolute;
+            top: 76%;
+            left: 30%;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: white;
+        }
+        .btn3:hover{
+            color:white;
+        }
+        .enlacespos{
+            display: none;
+        }
+        .carouselmobile{
+            display: inline;
+        }
+        .video{
+            display: none;
+            position: relative;
+        }
+        .iniciocontenedor{
+            max-width:100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .img1{
+            height: 100vh;
+            width: auto;
+        }
+        .imgcontmobile{
+            max-width:100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .imgcontmobile2{
+            max-width:100vw;
+            height:100vh;
+            overflow: hidden;
+        }
+        .ocultarcar{
+            display: none;
+        }
+        .loginbar{
+            height: 100vh;
+            right: auto;
+            background-image: none;
+            background-color: transparent;
+            align-content: unset;
+        }
+        .qespacio{
+            padding-top: 0;
+        }
+        .desde{
+            padding: 0%!important;
+            position: unset;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        .contactomobile{
+            display: inline;
+            color: white;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+        }
+        .contactofooter{
+            display: none;
+        }
+        .nosotrosmobile{
+            display: none;
+        }
+        .iconosmobile{
+            display:flex; 
+            position:absolute; 
+        
+            width: 100vw; 
+            justify-content: space-evenly;
+        }
+        .iniciomobile{
+            background-color: white;
+        }
+        .icono1mobile{
+            position: absolute;
+            top: 10%;
+            height: 100px;
+            left: 41%;
+            display: inline;
+        }
+        .icono2mobile{
+            display: inline;
+            position: absolute;
+            height: 50px;
+            top: 130%;
+            right: 45%;
+        }
+        .desdemobile{
+            z-index: 1;
+            display: inline;
+            height: 100vh;
+            background-color: white;
+        }
+        .desdedesktop{
+            display: none;
+        }
+        .barragif{
+            z-index: 1;
+            width: 100vw;
+            display: inline;
+        }
+        /* .collapse.show {
+            height: 75vh;
+        } */
+        .accordionmobile{
+            position: absolute; 
+            top: 25%; 
+            width:100vw;
+            display: inline;
+        }
+        .textomobile{
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            font-weight: 100;
+        }
+        .btn-link:hover {
+            color: #ffffff!important;
+        }
+
+    }
+
+
+
+
+
+
+/* Boton "+" con movimiento version responsive */
+
+    /* .buttonspan {
+        color: #ecf0f1;
+        background: #e74c3c;
+        width: 25px;
+        height: 25px;
+        border: 0;
+        font-size: 1.5em;
+        position: relative;
+      } */
+/*       
+      button span {
+        position: absolute;
+        transition: 300ms;
+        background: #00b4d8;
+        border-radius: 2px;
+      } */
+      
+      /* Create the "+" shape by positioning the spans absolutely */
+      /* button span:first-child {
+        top: 25%;
+        bottom: 25%;
+        width: 10%;
+        left: 45%;
+      }
+      
+      button span:last-child {
+        left: 25%;
+        right: 25%;
+        height: 10%;
+        top: 45%;
+      } */
+      
+      /* Morph the shape when the button is hovered over */
+      /* button:hover span {
+        transform: rotate(90deg);
+        
+      }
+      
+      button:hover span:last-child {
+        left: 50%;
+        right: 50%;
+      } */
+
+
+
+
+
+
+/* transicion de texto */
+      .blink_me {
+        position: absolute;
+        display: inline-block;
+        vertical-align: bottom;
+        animation: blinker 2s linear infinite;
+        animation-delay: 1s;
+        top: 35%;
+      }
+      
+      .blink_me span {
+        float: left;
+        font-size: xxx-large;
+        overflow: hidden;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        animation: hideShow 12s linear infinite;
+      }
+      
+      /* .blink_me span:nth-child(1) { animation-delay: -0s; }
+      .blink_me span:nth-child(2) { animation-delay: -2s; }
+      .blink_me span:nth-child(3) { animation-delay: -4s; }
+      .blink_me span:nth-child(4) { animation-delay: -6s; }
+      .blink_me span:nth-child(5) { animation-delay: -8s; }
+      .blink_me span:nth-child(6) { animation-delay: -10s; } */
+      
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+      @keyframes hideShow {
+        0%, 16.6%, 33.33%, 100% { width: 0; }
+        16.66%, 33.3% { width: auto; }
+      } 
+
+
+
+
+
+/* clases */
+.imgNosotros{
+    height: 70vh;
+}
+.logoNosotros{
+    height: 5rem;
+}
+.textoNosotros{
+    text-align: center;
+    margin-left: 6rem;
+    margin-top: 2rem;
+    font-family: 'Montserrat';
+    font-size: 2rem;
+}
+.textoNosotros1{
+    font-weight: 700;
+    margin-top: 2rem;
+}
+.nosotros{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5rem;
+}
+.imgInicio{
+    width: 100vw;
+    margin-top: -8rem;
+    filter: brightness(0.8);
+}
+.barraAzulMobile{
+    display: none;
+}
+@media only screen and (max-width: 850px) {
+    .nosotros, .imgInicio, .fb, .wh{
+        display: none;
+    }
+    .barraAzulMobile{
+        width: 100vw;
+        display:block;
+    }
+}
+
+
+.whatsappIcono{
+    height: 2.5rem;
+}

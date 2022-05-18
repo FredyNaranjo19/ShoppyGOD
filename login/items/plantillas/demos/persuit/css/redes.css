@@ -1,0 +1,22 @@
+.container-redes{
+    position: fixed;
+    bottom: 15px;
+    right: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.container-redes a{
+    margin-top: 4px;
+}
+
+.container-redes img{
+    width: 70px;
+    padding: 4px;
+    background: rgba(0,0,0,0.0);
+    cursor: pointer;
+    border-radius: 100%;
+    transition: all 300ms;
+}

@@ -1,0 +1,131 @@
+/*===============================================
+=            CSS PRODUCTOS FAVORITOS            =
+===============================================*/
+
+.l_product_item .l_p_text ul li.p_icon .heartsA{
+	color: #F6336F;
+	cursor: pointer;
+}
+.l_product_item .l_p_text ul li.p_icon .heartsA:hover{
+	color: #999999;
+	cursor: pointer;
+}
+
+.l_product_item .l_p_text ul li.p_icon .hearts{
+	color: #999999;
+	cursor: pointer;
+}
+
+.l_product_item .l_p_text ul li.p_icon .hearts:hover{
+	color: #F6336F;
+	cursor: pointer;
+}
+
+
+
+
+.l_product_item .l_p_text ul li.p_icon p {
+  border: 1px solid #999999;
+  font-size: 17px;
+  color: #999999;
+  display: inline-block;
+  padding: 0px 10px;
+  line-height: 38px;
+  position: relative;
+  top: 1px;
+  -webkit-transition: all 400ms linear 0s;
+  -o-transition: all 400ms linear 0s;
+  transition: all 400ms linear 0s;
+}
+
+
+/* TABLA DE DERIVADOS */
+
+.divTableDerivados{
+
+  max-height: 130px; 
+  overflow-y: auto;
+
+}
+
+
+.product-image-thumb{
+  width: 100%;
+}
+
+  .product-image-thumb div{
+    display: inline-block;
+    width: 33%;
+  }
+
+    .product-image-thumb div img{
+
+      width: 100%;
+      height: 120px;
+      object-fit: scale-down;
+
+    }
+
+.imgViewNormal{
+  width: 100%;
+  height: 350px;
+  margin-bottom: 10px;
+
+}
+  
+  .imgViewNormal img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+  }
+
+  .imgViewNormal .active{
+    transition: opacity 2s linear;  
+    transform:translate(0);
+    opacity: 1;
+    display: block;
+  }
+
+  .imgViewNormal .desactive{
+    transform:translate(9999px);
+    opacity: 0; 
+    display: none;
+  }
+
+
+.imgViewScale{
+  /*margin: 5px;*/
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+
+  /*border: 1px solid #E2DDDD;*/
+}
+  
+  .imgViewScale img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    border: 1px solid #E2DDDD;
+    border-radius: 10px;
+  }
+
+  .imgViewScale .active{
+    box-shadow: 3px 6px rgba(0,0,0,0.3);
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+
+
+
+@media (max-width: 650px){
+  .imgViewNormal{
+    height: 300px;
+    margin-top: -80px;
+    margin-bottom: 10px;
+
+  }
+
+}

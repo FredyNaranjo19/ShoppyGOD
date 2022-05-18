@@ -1,0 +1,632 @@
+[30-Nov-2021 18:24:31 America/Mexico_City] PHP Warning:  require_once(../../../../items/mvc/modelos/conexion.php): failed to open stream: No such file or directory in /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php on line 4
+[30-Nov-2021 18:24:31 America/Mexico_City] PHP Fatal error:  require_once(): Failed opening required '../../../../items/mvc/modelos/conexion.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php on line 4
+[30-Nov-2021 18:24:32 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:24:40 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '3')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '3')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:24:42 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:24:52 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:25:02 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:25:03 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '3')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '3')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:25:12 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:25:18 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:25:18 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:25:18 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:25:22 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:25:31 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '13')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '13')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:25:32 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:25:40 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '3')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '3')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:25:42 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:25:52 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:26:02 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:26:03 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '3')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '3')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:26:12 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:26:19 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:26:19 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:26:19 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:26:22 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:26:31 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '13')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '13')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:26:32 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:26:40 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '3')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '3')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:26:42 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:26:52 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:27:02 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:27:03 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '3')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '3')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:27:12 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:27:18 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:27:18 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:27:18 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:27:22 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:27:31 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '13')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '13')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:27:32 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:27:40 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '3')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '3')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:27:42 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:27:52 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:28:02 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:28:03 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '3')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '3')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:28:12 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:28:18 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:28:18 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:28:18 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:28:22 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:28:32 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:28:40 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '3')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '3')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:28:42 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:28:52 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:29:02 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:29:03 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '3')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '3')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:29:12 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:29:17 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:29:17 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:29:17 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:29:22 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:29:32 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:29:40 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '3')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '3')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:29:42 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:29:52 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:30:02 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:30:03 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '3')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '3')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:30:12 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:30:18 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:30:18 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:30:18 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:30:22 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8
+[30-Nov-2021 18:30:32 America/Mexico_City] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php:8
+Stack trace:
+#0 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php(8): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/twyncost/yira.com.mx/login/items/mvc/modelos/dashboard/modelo.ventasCedis.php(87): Conexion::conectar()
+#2 /home3/twyncost/yira.com.mx/login/items/mvc/controladores/dashboard/controlador.ventasCedis.php(56): ModeloVentasCedis::mdlMostrarCantidadPedidosPorEstado('cedis_ventas', 'id_empresa', '4')
+#3 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(25): ControladorVentasCedis::ctrMostrarCantidadPedidosPorEstado('id_empresa', '4')
+#4 /home3/twyncost/yira.com.mx/login/dashboard/vistas/modulos/fix/peticiones-lateral.php(111): notificaciones->notificacionesPedidosPorEmpresa()
+#5 {main}
+  thrown in /home3/twyncost/yira.com.mx/login/items/mvc/modelos/conexion.php on line 8

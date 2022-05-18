@@ -1,0 +1,41 @@
+.planImagen{
+	width: 100%;
+	height: 150px;
+}
+
+	.planImagen img{
+		width: 100%;
+		height: 100%;
+		object-fit: scale-down;
+
+	}
+
+	.planTitulo{
+		text-align: center;
+
+	}
+
+		.planTitulo h4:first-letter {
+		    text-transform: uppercase;
+		}
+
+
+.tituloImgPlantilla{
+	text-align: center;
+}
+
+.imgConfigView{
+	width: 100%;
+	height: 200px;
+}
+	
+	.imgConfigView img{
+		width: 100%;
+		height: 100%;
+		object-fit: scale-down;
+	}
+
+.btnGuardarImgPlantilla{
+	margin: 10px;
+	width: 150px;
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd " Version="3.3" CondicionesDePago="PAGO EN UNA SOLA EXHIBICION" Fecha="2022-01-12T14:54:38" Folio="23" FormaPago="28" LugarExpedicion="42180" MetodoPago="PUE" Moneda="MXN" Serie="A" SubTotal="5000.00" TipoCambio="1" TipoDeComprobante="E" Total="5800" Certificado="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" NoCertificado="00001000000411407041" Sello="Ny/FBfJu3WqEbjkRESbun+wp5f0x4kxA02MJ0vyyg9S5ar4TUWOYu2FG7lWTZPTGclRU9YfcXXNn0BoJv3veJwvrTkuJx6TsgD99CgxkY+bLp1yr9Iy0dGbTwcRD58EiwS+sIRRrB2Kgijr/qrQZKcwPASLN0C+4snxJUQ5QDA3IkqkDxK+gsv3f9AJ81SjMoYFvNR8NPCYWBmEBDAtkAMYA/NsoIHJZ1Rk9utKTyXXRipzC0ufH3pY6WBPyOAomkQX52vWTHvINRWKnUwmSSYrNTUWlPcceHBlkbPljKf50LzDfN7fjmMYArdPJ0C8PxhENTsGZwoocO5+H8oubaQ==">
+  <cfdi:Emisor Rfc="DDM180518659" Nombre="Distribuidor Diesel Motors SA de CV" RegimenFiscal="601"/>
+  <cfdi:Receptor Rfc="TDJ170721S20" Nombre="TRANSPORTE Y DISTRIBUCION JAFRE SA DE CV." UsoCFDI="G03"/>
+  <cfdi:Conceptos>
+    <cfdi:Concepto Cantidad="1" Unidad="Pieza" NoIdentificacion="87" Descripcion="FLEETGUARD / 1PLF3000" ValorUnitario="284.482759" Importe="284.482759" ClaveProdServ="40161504" ClaveUnidad="H87">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="284.482759" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="45.517241"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto Cantidad="2" Unidad="Pieza" NoIdentificacion="709" Descripcion="FLEETGUARD / 1PFF213" ValorUnitario="103.448276" Importe="206.896552" ClaveProdServ="40161513" ClaveUnidad="H87">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="206.896552" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="33.103448"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto Cantidad="1" Unidad="Pieza" NoIdentificacion="770" Descripcion="JN / JN5083COM" ValorUnitario="189.655172" Importe="189.655172" ClaveProdServ="31401500" ClaveUnidad="H87">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="189.655172" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="30.344828"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto Cantidad="3" Unidad="Pieza" NoIdentificacion="1170" Descripcion="AFA / A3068135" ValorUnitario="103.448276" Importe="310.344828" ClaveProdServ="31411700" ClaveUnidad="H87">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="310.344828" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="49.655172"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto Cantidad="3" Unidad="Pieza" NoIdentificacion="1850" Descripcion="TRP / TE15W40P" ValorUnitario="1336.206897" Importe="4008.620690" ClaveProdServ="25191700" ClaveUnidad="H87">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4008.620690" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="641.379310"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="800.00">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TasaOCuota="0.160000" Importe="800.00" TipoFactor="Tasa"/>
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="a91adc3f-511f-45e4-a83e-5c9ced8ed9b5" FechaTimbrado="2022-01-12T14:56:40" RfcProvCertif="LSO1306189R5" SelloCFD="Ny/FBfJu3WqEbjkRESbun+wp5f0x4kxA02MJ0vyyg9S5ar4TUWOYu2FG7lWTZPTGclRU9YfcXXNn0BoJv3veJwvrTkuJx6TsgD99CgxkY+bLp1yr9Iy0dGbTwcRD58EiwS+sIRRrB2Kgijr/qrQZKcwPASLN0C+4snxJUQ5QDA3IkqkDxK+gsv3f9AJ81SjMoYFvNR8NPCYWBmEBDAtkAMYA/NsoIHJZ1Rk9utKTyXXRipzC0ufH3pY6WBPyOAomkQX52vWTHvINRWKnUwmSSYrNTUWlPcceHBlkbPljKf50LzDfN7fjmMYArdPJ0C8PxhENTsGZwoocO5+H8oubaQ==" NoCertificadoSAT="00001000000509846663" SelloSAT="ViNKHShqTrk4k5hhxVPd+x02BpPTcuHtPddCUO1HGUhnIpmvpiUBhk5w4/YT5EMaCFLtAn853E6FHyMG3GN/mM3ITJqqxcaoEHK0HLBCHz0kVXBxioQWAchpmIHdxJyQIJQZ5/EtRJN1vvz+Pv2qIlbZZCWRWDXc4TWcWlnsTuBPL5Ceq4qQSw303gYlebMHn+xi7PBhtC7kJrS2edbpJa+t9oQqp8by5ahBSfQPGVOsHexCwV7aSMN/vxvQfpMd1EXiaD2RZ5BKCl0Pb5k2GefocL1bZi0Kjali2XQ1eNrZsPDfQ9SO+ALIN41602+4RliSipcbrsbxMg/21DmJRQ=="/>
+  </cfdi:Complemento>
+</cfdi:Comprobante>

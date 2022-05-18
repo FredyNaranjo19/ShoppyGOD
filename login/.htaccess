@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^crboutique\.store$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.crboutique\.store$
+RewriteRule ^/?$ "https\:\/\/crboutique\.store\/crboutique\/inicio" [R=301,L]
+
