@@ -11,7 +11,7 @@
 				</div>
 
 				<div class="right-top-bar flex-w h-full">
-					<a href="#" class="flex-c-m trans-04 p-lr-25">
+					<a href="contact" class="flex-c-m trans-04 p-lr-25">
 						Ayuda
 					</a>
 
@@ -33,7 +33,7 @@
 				<!-- Menu desktop -->
 				<div class="menu-desktop">
 					<ul class="main-menu">
-						<li class="active-menu">
+						<li>
 							<a href="index">Inicio</a>
 						</li>
 

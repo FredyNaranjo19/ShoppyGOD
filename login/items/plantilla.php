@@ -70,7 +70,7 @@
 
 
     <!--===============================================================================================-->	
-<script src="plantillas/Shoppy/Shoppy/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="plantillas/Shoppy/Shoppy/vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
 	<script src="plantillas/Shoppy/Shoppy/vendor/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->

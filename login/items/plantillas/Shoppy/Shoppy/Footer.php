@@ -1,9 +1,9 @@
 <body class="animsition">
 <!-- Footer -->
-<footer class="bg3 p-t-75 p-b-32">
+<footer class="bg3 p-t-45 p-b-22">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 col-lg-3 p-b-50">
+            <div class="col-sm-6 col-lg-4 p-b-30">
                 <h4 class="stext-301 cl0 p-b-30">
                     Categorias
                 </h4>
@@ -35,7 +35,7 @@
                 </ul>
             </div>
 
-            <div class="col-sm-6 col-lg-3 p-b-50">
+            <div class="col-sm-6 col-lg-4 p-b-30">
                 <h4 class="stext-301 cl0 p-b-30">
                     Ayuda
                 </h4>
@@ -62,13 +62,13 @@
                 </ul>
             </div>
 
-            <div class="col-sm-6 col-lg-3 p-b-50">
+            <div class="col-sm-6 col-lg-3 p-b-30">
                 <h4 class="stext-301 cl0 p-b-30">
                     Contactanos
                 </h4>
 
                 <p class="stext-107 cl7 size-201">
-                    ¿Podemos ayudarte? Visitanos en C. San Pablo 112, Cd de los Niños, 42070 Pachuca de Soto, Hgo. o contactanos al Tel:+52 7712816713
+                    ¿Podemos ayudarte? Visitanos en C. San Pablo 112, CD. de los Niños, 42070 Pachuca de Soto, Hgo. o contactanos al Tel:+52 7712816713
                 </p>
 
                 <div class="p-t-27">
