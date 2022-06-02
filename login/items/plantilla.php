@@ -49,6 +49,8 @@
                 $_GET['ruta'] == "contact" ||
                 $_GET['ruta'] == "index" ||
                 $_GET['ruta'] == "product" ||
+				$_GET['ruta'] == "categorie" ||
+				$_GET['ruta'] == "categories" ||
                 $_GET['ruta'] == "product-detail" ||
                 $_GET['ruta'] == "proveedor" ||
                 $_GET['ruta'] == "Proveedores" ||

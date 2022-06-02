@@ -26,7 +26,7 @@
 			<nav class="limiter-menu-desktop container">
 				
 				<!-- Logo desktop -->		
-				<a href="index.php" class="logo">
+				<a href="index" class="logo">
 					<img src="plantillas/Shoppy/Shoppy/images/icons/Yira-Negro.png" alt="IMG-LOGO">
 				</a>
 
@@ -42,8 +42,13 @@
 						</li>
 
 						<li>
+							<a href="categories">Categorias</a>
+						</li>
+
+						<li>
 							<a href="Proveedores">Proveedores</a>
 						</li>
+
 						<li>
 							<a href="contact">Contacto</a>
 						</li>
@@ -72,7 +77,7 @@
 	<div class="wrap-header-mobile">
 		<!-- Logo moblie -->		
 		<div class="logo-mobile">
-			<a href="index.php"><img src="plantillas/Shoppy/Shoppy/images/icons/Yira-Negro.png" alt="IMG-LOGO"></a>
+			<a href="index"><img src="plantillas/Shoppy/Shoppy/images/icons/Yira-Negro.png" alt="IMG-LOGO"></a>
 		</div>
 
 		<!-- Icon header -->
@@ -126,6 +131,10 @@
 
 			<li>
 				<a href="product" class="label1 rs1" data-label1="hot">Productos</a>
+			</li>
+
+			<li>
+				<a href="categories">Categorias</a>
 			</li>
 
 			<li>
