@@ -11,7 +11,7 @@ class ControladorShPedidos{
 		return $respuesta;
 	}
 
-	static public function ShMostrarPedidosPaginado($datos){
+	static public function ShMostrarPedidosPaginados($datos){
 
 		$respuesta = ShPedidos::MostrarPedidosPaginados($datos);
 
@@ -43,7 +43,7 @@ class ControladorShPedidos{
 			$tabla = "sh_pedidos_comprobante_pago";
 
 			$estadoPedido = "Comprobante subido";
-			$estadoEntrega = "Checando Comprobante";
+			$estadoEntrega = "Checando comprobante";
 
 			$datos = array("id_proveedor" => $_POST["empresa"], "folio" => $_POST["eFolioPago"],"monto" => $_POST["nMonto"], "comprobante" => $_POST["nTicketCompra"], "estado" => $estadoEntrega);
 

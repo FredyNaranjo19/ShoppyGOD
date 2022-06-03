@@ -23,17 +23,6 @@ class ShPedidos{
         $conex = NULL;
     }
 
-    static public function PaginacionPedidos($datos){
-
-        $conex = Conexion::conectar()->prepare("SELECT COUNT(id_pedido) FROM sh_pedidos WHERE id_empresa = :id_empresa AND id_proveedor =:id_empresa");
-        $conex -> bindParam(":id_proveedor", $datos["id_proveedor"], PDO::PARAM_STR);
-        $conex -> bindParam(":id_empresa", $datos["id_empresa"], PDO::PARAM_STR);
-        $conex -> execute();
-        return $conex -> fetch();
-        $conex -> close();
-        $conex = NULL;
-    }
-
     static public function MostrarPedidosPaginados($datos){
 
         $conex = Conexion::conectar()->prepare("SELECT * FROM sh_pedidos AS p INNER JOIN sh_pedidos_entregas AS e ON p.folio = e.folio WHERE p.id_empresa = :id:empresa AND p.id_proveedor = :id_proveedor ORDER BY p.id_pedido DESC LIMIT :inferior, :limite");
@@ -44,40 +33,6 @@ class ShPedidos{
         $conex -> execute();
 
         return $conex -> fetchAll();
-        $conex -> close();
-        $conex = NULL;
-    }
-
-    static public function InsertarCostoEnvio($tabla, $datos){
-        $conex = Conexion::conectar()->prepare("UPDATE $tabla SET `envio`=:envio WHERE `folio`=:folio AND id_proveedor = :id_proveedor");
-        $conex -> bindParam(":id_proveedor", $datos["id_proveedor"], PDO::PARAM_STR);
-        $conex -> bindParam(":folio", $datos["folio"], PDO::PARAM_STR);
-        $conex -> bindParam(":envio", $datos["envio"], PDO::PARAM_STR);
-        if($conex -> execute()){
-            return "ok";
-        } else{
-            return "error";
-        }
-        $conex -> close();
-        $conex -> NULL;
-    }
-
-    static public function MostrarPedidoIndividual($tabla, $folio, $empresa){
-        $conex = Conexion::conectar()->prepare("SELECT * FROM sh_pedidos AS p INNER JOIN sh_pedidos_entregas AS e ON p.folio = e.folio INNER JOIN clientes_direcciones_empresa AS d ON e.id_domicilio = d.id_info WHERE p.folio = :folio AND p.id_proveedor = :id_proveedor");
-        $conex -> bindParam(":id_proveedor", $empresa, PDO::PARAM_STR);
-        $conex -> bindParam(":folio", $folio, PDO::PARAM_STR);
-        $conex->execute();
-        return $conex ->fetch();
-        $conex -> close();
-        $conex = NULL;
-    }
-   
-    static public function MostrarPedidoIndividualSucursal($tabla, $folio, $empresa){
-        $conex = Conexion::conectar()->prepare("SELECT * FROM sh_pedidos AS p INNER JOIN sh_pedidos_entregas AS e ON p.folio = e.folio INNER JOIN sh_puntos_entrega AS e ON p.folio = e.folio INNER JOIN sh_puntos_entrega AS d ON e.id_punto_entrega = d.id_punto_entrega WHERE p.folio = :folio AND p.id_proveedor = :id_proveedor");
-        $conex -> bindParam(":id_proveedor", $empresa, PDO::PARAM_STR);
-        $conex -> bindParam(":folio", $folio, PDO::PARAM_STR);
-        $conex -> execute();
-        return $conex -> fetch();
         $conex -> close();
         $conex = NULL;
     }

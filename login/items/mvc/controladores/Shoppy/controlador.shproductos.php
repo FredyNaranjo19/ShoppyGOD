@@ -14,7 +14,7 @@ class ControladorShProductos{
      * @return void
      */
     static public function ctrShowLimitProducts(){
-        $tabla = "sh_productos";
+        $tabla = "sh_producto";
         $respuesta = ShProductos::ShowLimitProducts($tabla);
         return $respuesta;
     }

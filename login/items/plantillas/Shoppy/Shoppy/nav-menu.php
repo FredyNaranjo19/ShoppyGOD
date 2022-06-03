@@ -1,5 +1,3 @@
-<body class="animsition">
-<!-- Header -->
 <header>
 	<!-- Header desktop -->
 	<div class="container-menu-desktop">
@@ -102,7 +100,6 @@
 			</span>
 		</div>
 	</div>
-
 
 	<!-- Menu Mobile -->
 	<div class="menu-mobile">

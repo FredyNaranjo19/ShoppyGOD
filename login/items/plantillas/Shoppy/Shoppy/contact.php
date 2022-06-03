@@ -1,4 +1,3 @@
-	<!-- Title page -->
 	<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('plantillas/Shoppy/Shoppy/images/bg-01.jpg');">
 		<h2 class="ltext-105 cl0 txt-center">
 			Contacto
@@ -38,7 +37,7 @@
 
 						<div class="size-212 p-t-2">
 							<span class="mtext-110 cl2">
-								Direccion
+								Dirección
 							</span>
 
 							<p class="stext-115 cl6 size-213 p-t-18">
@@ -74,7 +73,7 @@
 							</span>
 
 							<p class="stext-115 cl1 size-213 p-t-18">
-								....
+							contacto@yira.com.mx
 							</p>
 						</div>
 					</div>

@@ -182,6 +182,7 @@ class ShProductos{
             $conex -> bindParam(":id_empresa", $datos["id_empresa"], PDO::PARAM_STR);
             $conex -> execute();
             return $conex -> fetch();
+
         }else{
 
             $conex = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE id_empresa = :id_empresa");
@@ -189,6 +190,7 @@ class ShProductos{
             $conex -> execute();
             return $conex -> fetchAll();
         }
+
         $conex -> close();
         $conex  = NULL;
     }
@@ -317,7 +319,7 @@ class ShProductos{
 
     static public function UpdateComentarioProducto($datos){
 
-        $conex = Conexion::conectar()->prepare("UPDATE sh_productos_comentarios SET puntos = :puntos, comentario = :comentario WHERE id_producto = :id_producto AND id_empresa = :id_empresa");
+        $conex = Conexion::conectar()->prepare("UPDATE sh_productos_comentario SET puntos = :puntos, comentario = :comentario WHERE id_producto = :id_producto AND id_empresa = :id_empresa");
 
         $conex -> bindParam(":id_producto", $datos["id_producto"], PDO::PARAM_STR);
         $conex -> bindParam(":id_proveedor", $datos["id_proveedor"], PDO::PARAM_STR);
