@@ -58,13 +58,13 @@ class AjaxMakeOrder
                 "tipoEntrega" => $tipoEnvio
             );
         }
-        $configEnvio = ModeloConfiguracion::mdlMostrarConfiguracionCostoEnvio("sh_configuracion_costo_envios", "id_empresa", $this->empresaPago);
-        $pedido = ShPedidos::mdlCrearPedido($tabla_pedidos, $datosPedido);
-        $iva = ModeloConfiguracion::mdlMostrarInformacionIva($this->empresaPago);
+        $configEnvio = ShConfiguracion::shMostrarConfiguracionCostoEnvio("sh_configuracion_costo_envios", "id_empresa", $this->empresaPago);
+        $pedido = ShPedidos::shCrearPedido($tabla_pedidos, $datosPedido);
+        $iva = ShConfiguracion::shMostrarInformacionIva($this->empresaPago);
 
         if ($pedido == 'ok') {
             $datos = array("id_cliente" => $_SESSION["id"], "id_empresa" => $this->empresaPago);
-            $resultadoAgrupado = ShCarrito::mdlMostrarCarritoAgrupado($tablaCarrito, $datos);
+            $resultadoAgrupado = ShCarrito::shMostrarCarritoAgrupado($tablaCarrito, $datos);
             foreach ($resultadoAgrupado as $key => $agrupado) {
                 $datos = array(
                     "modelo" => $agrupado["modelo"],
@@ -72,7 +72,7 @@ class AjaxMakeOrder
                     "id_cliente" => $_SESSION["id"],
                     "opcion" => 2
                 );
-                $resultado = ShCarrito::mdlMostrarCarrito($tablaCarrito, $datos);
+                $resultado = ShCarrito::shMostrarCarrito($tablaCarrito, $datos);
                 foreach ($resultado as $key => $value) {
                     $datos = array(
                         "id_empresa" => $this->empresaPago,
@@ -84,7 +84,7 @@ class AjaxMakeOrder
                         "id_producto" => $value["id_producto"]
                     );
                     $tablaCalculo = "productos";
-                    $calculoInfo = ShProductos::mdlMostrarCalculosEnvioProducto($tablaCalculo, $datosCalculo);
+                    $calculoInfo = ShProductos::shMostrarCalculosEnvioProducto($tablaCalculo, $datosCalculo);
 
                     $medidas = json_decode($calculoInfo["medidas"], true);
                     $volumenProducto = floatval($medidas[0]["largo"]) * floatval($medidas[0]["ancho"]) * floatval($medidas[0]["alto"]);
@@ -94,7 +94,7 @@ class AjaxMakeOrder
                     $volumenTotalCarrito = $volumenTotalCarrito + $volumenProductoTotal;
                     $pesoTotalCarrito = $pesoTotalCarrito + $pesoProductoTotal;
 
-                    $precioResultado = ShProductos::mdlMostrarPreciosProducto($tablaListadoPrecio, $datos);
+                    $precioResultado = ShProductos::shMostrarPreciosProducto($tablaListadoPrecio, $datos);
 
                     if (count($precioResultado) > 1) {
 
@@ -145,14 +145,14 @@ class AjaxMakeOrder
                         "utilidad" => $montoTotal - $montoBase
                     );
 
-                    $detalle = ShPedidos::mdlCrearDetallePedido($tablaDetalle, $datosDetalle);
+                    $detalle = ShPedidos::shCrearDetallePedido($tablaDetalle, $datosDetalle);
 
                     $tablaEditarProducto = "productos";
                     $datosEditarProducto = array(
                         "id_producto" => $value["id_producto"],
                         "cantidad" => $value["cantidad"]
                     );
-                    $editarProducto = ShProductos::mdlEditarStock($tablaEditarProducto, $datosEditarProducto);
+                    $editarProducto = ShProductos::shEditarStock($tablaEditarProducto, $datosEditarProducto);
                 }
             }
 
@@ -172,14 +172,14 @@ class AjaxMakeOrder
                 "folio" => $folio,
                 "id_empresa" => $this->empresaPago
             );
-            $insertarCostoEnvio = ShPedidos::mdlinsertarCostoEnvio("sh_pedidos", $dataCosto);
-            $eliminar = ShCarrito::mdlEliminarCarrito($tablaCarrito, $item, $_SESSION["id"]);
+            $insertarCostoEnvio = ShPedidos::shinsertarCostoEnvio("sh_pedidos", $dataCosto);
+            $eliminar = ShCarrito::shEliminarCarrito($tablaCarrito, $item, $_SESSION["id"]);
 
 
             if ($tipoEnvio == "domicilio") {
-                $pedidoEntrega = ShPedidos::mdlCrearEntregaPedido($tablaEntregaPedido, $datosEntregaPedido);
+                $pedidoEntrega = ShPedidos::shCrearEntregaPedido($tablaEntregaPedido, $datosEntregaPedido);
             } else if ($tipoEnvio == "sucursal") {
-                $pedidoEntrega = ShPedidos::mdlCrearEntregaPedidoSucursal($tablaEntregaPedido, $datosEntregaPedido);
+                $pedidoEntrega = ShPedidos::shCrearEntregaPedidoSucursal($tablaEntregaPedido, $datosEntregaPedido);
             }
 
             $respuesta = $folio;

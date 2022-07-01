@@ -1,8 +1,8 @@
 <?php
 
-class ControladorConfiguracion{
-
-    static public function shMostrarConfiguracionPago($item, $valor){
+class CtrConfiguracionSh
+{
+    static public function ShMostrarConfiguracionPago($item, $valor){
 
         $tabla = "sh_configuracion_pagos";
 
@@ -11,7 +11,7 @@ class ControladorConfiguracion{
         return $respuesta;
     }
 
-    static public function shMostrarConfiguracionEntregas($item, $valor){
+    static public function ShMostrarConfiguracionEntregas($item, $valor){
 
         $tabla = "sh_configuracion_entregas";
 
@@ -20,7 +20,8 @@ class ControladorConfiguracion{
         return $respuesta;
     }
 
-    static public function shMostrarConfiguracionCostoEnvio($item, $valor){
+    static public function ShMostrarConfiguracionCostoEnvio($item, $valor){
+        
         $tabla = "sh_configuracion_costo_envios";
 
         $respuesta = ShConfiguracion::shMostrarConfiguracionCostoEnvio($tabla, $item, $valor);
@@ -28,7 +29,7 @@ class ControladorConfiguracion{
         return $respuesta;
     }
 
-    static public function shEmpresas($empresa){
+    static public function ShEmpresas($empresa){
         $respuesta = ShConfiguracion::shEmpresas($empresa);
 
         return $respuesta;

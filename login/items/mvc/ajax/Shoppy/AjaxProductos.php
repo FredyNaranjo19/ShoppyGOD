@@ -12,15 +12,15 @@ class AjaxProductos{
 		$datos = array("id_producto" => $this -> FavoritoIdProducto,
 						"id_cliente" => $this -> FavoritoIdCliente);
 
-		$consulta= ModeloProductos::mdlProductoFavorito($tabla, $datos);
+		$consulta= ShProductos::shProductoFavorito($tabla, $datos);
 
 		if ($consulta == false) {
 			
-			$respuesta = ModeloProductos::mdlCrearProductoFavorito($tabla,$datos);
+			$respuesta = ShProductos::shCrearProductoFavorito($tabla,$datos);
 
 		} else {
 
-			$respuesta = ModeloProductos::mdlEliminarProductoFavorito($tabla,$datos);
+			$respuesta = ShProductos::shEliminarProductoFavorito($tabla,$datos);
 			
 		}
 

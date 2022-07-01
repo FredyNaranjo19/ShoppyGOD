@@ -20,14 +20,14 @@ class AjaxComentarios{
             "puntos" => $this -> ratingProducto
         );
 
-        $verificarComentario = ShProductos::mdlVerficarComentario($this->idProducto, $this -> idUsuarioProducto);
+        $verificarComentario = ShProductos::shVerficarComentario($this->idProducto, $this -> idUsuarioProducto);
 
         $datosConsulta = array(
             "id_empresa" => $this -> empresaProducto,
             "id_producto" => $this -> idProducto
         );
 
-        $puntuacionInfo = ShProductos::mdlObtenerPuntuacionProducto($datosConsulta);
+        $puntuacionInfo = ShProductos::shObtenerPuntuacionProducto($datosConsulta);
 
         if($verificarComentario == "false"){
             if($puntuacionInfo["comentarios"] == 0){
@@ -37,7 +37,7 @@ class AjaxComentarios{
                     "puntos" => $this->ratingProducto,
                     "comentarios" =>1
                 );
-                $actualizarPuntaje = ShProductos::mdlModificarPuntuacionProducto($datosUpdate);
+                $actualizarPuntaje = ShProductos::shModificarPuntuacionProducto($datosUpdate);
             }else{
                 $comentariosAux = $puntuacionInfo["comentarios"];
                 $puntuacionAux = ($puntuacionInfo ["puntos"] * $comentariosAux)+ $this ->ratingProducto;
@@ -51,9 +51,9 @@ class AjaxComentarios{
                     "comentarios" =>$comentariosCalc
                 );
 
-                $actualizarPuntuaje = ShProductos::mdlModificarPuntuacionProducto($datosUpdate);
+                $actualizarPuntuaje = ShProductos::shModificarPuntuacionProducto($datosUpdate);
             }
-            $comentar = ShProductos::mdlGuardarComentarioProducto($tabla, $datos);
+            $comentar = ShProductos::shGuardarComentarioProducto($tabla, $datos);
         }else{
             $comentariosAux = $puntuacionInfo["comentarios"];
             $puntuacionAux = ($puntuacionInfo["puntos"] * $comentariosAux) - $puntuacionInfo["puntos"] + $this -> ratingProducto;
@@ -66,9 +66,9 @@ class AjaxComentarios{
                 "puntos" => $puntuacionEdit,
                 "comentarios"=>$comentariosCalc
             );
-            $actualizarPuntuaje = ShProducto::mdlModificarPuntuacionProducto($datosUpdate);
+            $actualizarPuntuaje = ShProducto::shModificarPuntuacionProducto($datosUpdate);
 
-            $comentar = ShProductos::mdlUpdateComentarioProducto($datos);
+            $comentar = ShProductos::shUpdateComentarioProducto($datos);
         }
 
         if($cometar == "ok"){

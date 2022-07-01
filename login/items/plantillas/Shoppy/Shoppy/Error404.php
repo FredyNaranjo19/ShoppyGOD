@@ -9,9 +9,7 @@
                     Regresa al Inicio por favor.
                 </h3>
             </div>
-        </div>
-    
-            
+        </div>    
 </div>
         
 

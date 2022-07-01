@@ -5,19 +5,23 @@ class CtrShProveedores
 
 		$tabla = "sh_configuracion_logo";
 
-		$respuesta = ShProveedores::MostrarLogo($tabla, $item, $valor);
+		$respuesta = ShProveedores::shMostrarLogo($tabla, $item, $valor);
 
 		return $respuesta;
 	}
 
-    public static function ctrGetProveedores()
+    public static function ShGetProveedores()
     {
-        $respuesta = ShProveedores::getProveedores();
+
+        $respuesta = ShProveedores::shgetProveedores();
+        
         return $respuesta;
     }
 
-    public static function ctrGetProductosCategoria($idProveedor,$idCategoria){
-        $respuesta = ShProveedores::getProductosCategoria($idProveedor,$idCategoria);
+    public static function ShGetProductosCategoria($idProveedor,$idCategoria){
+
+        $respuesta = ShProveedores::shgetProductosCategoria($idProveedor,$idCategoria);
+        
         return $respuesta;
     }
 

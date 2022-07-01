@@ -12,15 +12,15 @@ class AjaxOrderMSJ{
         $idEmpresa = $this -> idEmpresa;
 
 
-        $verificarEnvio = ShPedidos::mdlVerificarTipoEntrega($folioPedido, $idEmpresa);
+        $verificarEnvio = ShPedidos::shVerificarTipoEntrega($folioPedido, $idEmpresa);
         $tipoEnvio = $verificarEnvio["tipo_entrega"];
-        $impuestos = ShConfig::mdlMostrarInformacionIva($idEmpresa);
+        $impuestos = ShConfig::shMostrarInformacionIva($idEmpresa);
         if($tipoEnvio == "domicilio"){
-            $pedido = ShPedidos::mdlMostrarPedidoIndividual($tablaPedido, $folioPedido, $idEmpresa);
+            $pedido = ShPedidos::shMostrarPedidoIndividual($tablaPedido, $folioPedido, $idEmpresa);
         }else if($tipoEnvio == "sucursal"){
-            $pedido = ShPedidos::mdlMostrarPedidoInduvidualSucursal($tablaPedido, $folioPedido, $idEmpresa);
+            $pedido = ShPedidos::shMostrarPedidoInduvidualSucursal($tablaPedido, $folioPedido, $idEmpresa);
         }
-        $pedidoExpandido = ShPedidos::mdlMostrarProductosPedido($tablaPedidosDetalles, $folioPedido, $idEmpresa);
+        $pedidoExpandido = ShPedidos::shMostrarProductosPedido($tablaPedidosDetalles, $folioPedido, $idEmpresa);
 
         $datos = array(
             "pedidoInfo" => $pedido,

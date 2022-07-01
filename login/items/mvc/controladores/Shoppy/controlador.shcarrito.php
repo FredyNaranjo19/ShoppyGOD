@@ -1,7 +1,8 @@
 <?php
-class ctrShCarrito{
-
-    static public function shcMostrarCarrito($datos){
+class ctrShCarrito
+{
+    static public function ShMostrarCarrito($datos){
+        
         $tabla = "sh_carrito";
 
         $respuesta = ShCarrito::shMostrarCarrito($tabla, $datos);
@@ -9,7 +10,7 @@ class ctrShCarrito{
         return $respuesta;
     }
 
-    static public function shcMostrarCarritoAgrupado($datos){
+    static public function ShMostrarCarritoAgrupado($datos){
 
         $tabla = "sh_carrito";
 
@@ -18,7 +19,7 @@ class ctrShCarrito{
         return $respuesta;
     }
 
-    static public function shcEliminarProductoCarrito(){
+    static public function ShEliminarProductoCarrito(){
 
         if(isset($_GET["delIdP"])){
 

@@ -13,7 +13,7 @@ class AjaxShCarrito{
         $can = $this -> cantidad;
         $datos = array("id_producto" => $this ->idAgregarProducto, "id_empresa" => $this -> empresa, "opcion" => 1);
 
-        $verificacion = ShCarrito::ShMostrarCarrito($tabla, $datos);
+        $verificacion = ShCarrito::shMostrarCarrito($tabla, $datos);
 
         if(sizeof($verificacion) == 0){
 

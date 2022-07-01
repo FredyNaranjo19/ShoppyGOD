@@ -6,28 +6,23 @@ class ShCarrito{
         
         if($datos["opcion"] == 1){
             $conex = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE id_producto = :id_producto AND id_empresa = id_empresa");
-
             $conex -> bindParam(":id_producto", $datos["id_producto"], PDO::PARAM-STR);
             $conex -> bindParam(":id_empresa", $datos["id_empresa"], PDO::PARAM_STR);
             $conex -> execute();
-
             return $conex -> fetchAll();
 
         }else if($datos["opcion"] == 2){
             $conex = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE id_proveedor = :id_proveedor AND id_empresa = :id_empresa AND modelo =:modelo");
-
             $conex -> bindParam("id_proveedor", $datos["id_proveedor"], PDO::PARAM_STR);
             $conex -> bindParam(":id_empresa", $datos["id_empresa"], PDO::PARAM_STR);
             $conex -> bindParam(":modelo", $datos["modelo"], PDO::PARAM_STR);
             $conex -> execute();
-
             return $conex -> fetchAll();
 
         }else if($datos["opcion"]==3){
             $conex = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE id_empresa = :id_empresa");
             $conex -> bindParam(":id_empresa", $datos["id_empresa"], PDO::PARAM_STR);
             $conex -> execute();
-
             return $conex -> fetchAll();
 
         }else{
@@ -46,18 +41,14 @@ class ShCarrito{
         $conex = Conexion::conectar()->prepare("SELECT modelo, SUM(cantidad) AS cantidad FROM $tabla WHERE id_empresa = :id_empresa AND id_proveedor = :id_proveedor GROUP BY modelo");
         $conex -> bindParam(":id_empresa", $datos["id_empresa"], PDO::PARAM_STR);
         $conex -> bindParam(":id_proveedor", $datos["id_proveedor"], PDO::PARAM_STR);
-
         $conex -> execute();
-
         return $conex -> fetchAll();
-
         $conex -> close();
         $conex = NULL;
     }
 
     static public function shAgregarProductoCarrito($tabla, $datos){
         $conex = Conexion::conectar()->prepare("INSERT INTO $tabla(id_producto, id_empresa, cantidad, modelo, id_proveedor) VALUES(:id_producto, :id_empresa, :cantidad, :modelo, :id_proveedor)");
-
         $conex -> bindParam(":id_producto", $datos["id_producto"], PDO::PARAM_STR);
         $conex -> bindParam(":id_empresa", $datos["id_empresa"], PDO::PARAM_STR);
         $conex -> bindParam(":cantidad", $datos["cantidad"], PDO::PARAM_STR);

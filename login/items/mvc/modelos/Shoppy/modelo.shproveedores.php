@@ -2,20 +2,17 @@
 
 class ShProveedores
 {
-    static public function MostrarLogo($tabla, $item, $valor){
+    static public function shMostrarLogo($tabla, $item, $valor){
 
 		$conex = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item");
 		$conex -> bindParam(":".$item, $valor, PDO::PARAM_STR);
-
 		$conex -> execute();
-
 		return $conex -> fetch();
- 
 		$conex -> close();
 		$conex = NULL; 
 	}
 
-    public static function getProveedores()
+    public static function shgetProveedores()
     {
         $conex = Conexion::conectar()->prepare("SELECT * FROM proveedores");
         $conex->execute();
@@ -24,7 +21,7 @@ class ShProveedores
         $conex = null;
     }
 
-    public static function getProductosCategoria($idProveedor,$idCategoria)
+    public static function shgetProductosCategoria($idProveedor,$idCategoria)
     {
         $conex = Conexion::conectar()->prepare("SELECT * FROM sh_productos
             INNER JOIN productos ON productos.id_producto = sh_productos.id_producto

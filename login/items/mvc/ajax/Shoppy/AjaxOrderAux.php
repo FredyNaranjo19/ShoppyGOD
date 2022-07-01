@@ -44,12 +44,12 @@ class AjaxMakeOrder
             "estado_entrega" => $estado_entrega,
             "id_domicilio" => $domicilio
         );
-        $configEnvio = ModeloConfiguracion::mdlMostrarConfiguracionCostoEnvio("sh_configuracion_costo_envios","id_empresa",$this->empresaPago);
-        $pedido = ModeloPedidos::mdlCrearPedido($tabla_pedidos, $datosPedido);
+        $configEnvio = ShConfiguracion::shMostrarConfiguracionCostoEnvio("sh_configuracion_costo_envios","id_empresa",$this->empresaPago);
+        $pedido = ShPedidos::shCrearPedido($tabla_pedidos, $datosPedido);
 
         if ($pedido == 'ok') {
             $datos = array("id_cliente" => $_SESSION["id"], "id_empresa" => $this->empresaPago);
-            $resultadoAgrupado = ShCarrito::mdlMostrarCarritoAgrupado($tablaCarrito, $datos);
+            $resultadoAgrupado = ShCarrito::shMostrarCarritoAgrupado($tablaCarrito, $datos);
             foreach ($resultadoAgrupado as $key => $agrupado) {
                 $datos = array(
                     "modelo" => $agrupado["modelo"],
@@ -57,7 +57,7 @@ class AjaxMakeOrder
                     "id_cliente" => $_SESSION["id"],
                     "opcion" => 2
                 );
-                $resultado = ShCarrito::mdlMostrarCarrito($tablaCarrito, $datos);
+                $resultado = ShCarrito::shMostrarCarrito($tablaCarrito, $datos);
                 foreach ($resultado as $key => $value) {
                     $datos = array(
                         "id_empresa" => $this->empresaPago,
@@ -69,7 +69,7 @@ class AjaxMakeOrder
                         "id_producto"=>$value["id_producto"]
                     );
                     $tablaCalculo = "productos";
-                    $calculoInfo= ShProductos::mdlMostrarCalculosEnvioProducto($tablaCalculo,$datosCalculo);
+                    $calculoInfo= ShProductos::shMostrarCalculosEnvioProducto($tablaCalculo,$datosCalculo);
 
                     $medidas = json_decode($calculoInfo["medidas"],true);
                     $volumenProducto = floatval($medidas[0]["largo"]) * floatval($medidas[0]["ancho"])*floatval($medidas[0]["alto"]);
@@ -79,7 +79,7 @@ class AjaxMakeOrder
                     $volumenTotalCarrito =$volumenTotalCarrito + $volumenProductoTotal;
                     $pesoTotalCarrito = $pesoTotalCarrito + $pesoProductoTotal;
 
-                    $precioResultado = ModeloProductos::mdlMostrarPreciosProducto($tablaListadoPrecio, $datos);
+                    $precioResultado = ShProductos::shMostrarPreciosProducto($tablaListadoPrecio, $datos);
 
                     if(count($precioResultado)>1){
 
@@ -114,14 +114,14 @@ class AjaxMakeOrder
                             "costo" => $costoProducto
                         );
 
-                        $detalle = ModeloPedidos::mdlCrearDetallePedido($tablaDetalle, $datosDetalle);
+                        $detalle = ShPedidos::shCrearDetallePedido($tablaDetalle, $datosDetalle);
 
                         $tablaEditarProducto = "productos";
                         $datosEditarProducto = array(
                             "id_producto" => $value["id_producto"],
                             "cantidad" => $value["cantidad"]
                         );
-                        $editarProducto = ModeloProductos::mdlEditarStock($tablaEditarProducto, $datosEditarProducto);
+                        $editarProducto = ShProductos::shEditarStock($tablaEditarProducto, $datosEditarProducto);
                        
                     
                 }
@@ -139,9 +139,9 @@ class AjaxMakeOrder
                 "folio"=> $folio,
                 "id_empresa"=>$this->empresaPago
             );
-            $insertarCostoEnvio = ModeloPedidos::mdlinsertarCostoEnvio("sh_pedidos",$dataCosto);
-            $eliminar = ModeloCarrito::mdlEliminarCarrito($tablaCarrito, $item, $_SESSION["id"]);
-            $pedidoEntrega = ModeloPedidos::mdlCrearEntregaPedido($tablaEntregaPedido, $datosEntregaPedido);
+            $insertarCostoEnvio = ModeloPedidos::shinsertarCostoEnvio("sh_pedidos",$dataCosto);
+            $eliminar = ModeloCarrito::shEliminarCarrito($tablaCarrito, $item, $_SESSION["id"]);
+            $pedidoEntrega = ModeloPedidos::shCrearEntregaPedido($tablaEntregaPedido, $datosEntregaPedido);
             
             $respuesta = $folio;
         } else {

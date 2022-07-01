@@ -7,7 +7,7 @@
 	<div class="sec-banner bg0 p-t-40 p-b-25">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
+				<div class="col-md-5 col-xl-3 p-b-30">
 					<!-- Block1 -->
 					<div class="block1 wrap-pic-w">
 						<img src="plantillas/Shoppy/Shoppy/images/banner-01.jpg" alt="IMG-BANNER">
@@ -28,7 +28,7 @@
 					</div>
 				</div>
 
-                <div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
+                <div class="col-md-5 col-xl-3 p-b-30">
 					<!-- Block1 -->
 					<div class="block1 wrap-pic-w">
 						<img src="plantillas/Shoppy/Shoppy/images/banner-03.jpg" alt="IMG-BANNER">

@@ -86,15 +86,18 @@
 				</h3>
 			</div>
 			<div class="row">
-				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
+				<div class="col-md-5 col-xl-3 p-b-30">
 					<!-- Block1 -->
+					<?php $categorias = ControladorShProductos::ctrGetCategoriesProductos();
+					foreach ($categorias as $catego){
+					?>
 					<div class="block1 wrap-pic-w">
-						<img src="plantillas/Shoppy/Shoppy/images/banner-01.jpg" alt="IMG-BANNER">
+						<img src="<?php echo $catego['imagen']?>" alt="IMG-BANNER">
 
 						<a href="product" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
 							<div class="block1-txt-child1 flex-col-l">
 								<span class="block1-name ltext-102 trans-04 p-b-8">
-									Mujer
+									<?php echo $catego['nombre']?>
 								</span>
 							</div>
 
@@ -107,9 +110,9 @@
 					</div>
 				</div>
 
-				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
+				<div class="col-md-5 col-xl-3 p-b-30">
 					<!-- Block1 -->
-					<div class="block1 wrap-pic-w">
+					<!--<div class="block1 wrap-pic-w">
 						<img src="plantillas/Shoppy/Shoppy/images/banner-03.jpg" alt="IMG-BANNER">
 
 						<a href="product" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
@@ -125,7 +128,8 @@
 								</div>
 							</div>
 						</a>
-					</div>
+					</div>-->
+					<?php } ?>
 				</div>
 			</div>
 		</div>
@@ -259,25 +263,25 @@
 
 								<li class="p-b-6">
 									<a href="#" class="filter-link stext-106 trans-04">
-										$50.00 - $100.00
+										$51.00 - $100.00
 									</a>
 								</li>
 
 								<li class="p-b-6">
 									<a href="#" class="filter-link stext-106 trans-04">
-										$100.00 - $150.00
+										$101.00 - $150.00
 									</a>
 								</li>
 
 								<li class="p-b-6">
 									<a href="#" class="filter-link stext-106 trans-04">
-										$150.00 - $200.00
+										$151.00 - $200.00
 									</a>
 								</li>
 
 								<li class="p-b-6">
 									<a href="#" class="filter-link stext-106 trans-04">
-										$200.00+
+										$201.00+
 									</a>
 								</li>
 							</ul>
@@ -384,10 +388,12 @@
 
 			<div class="row isotope-grid">
 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item">
+					<?php $productos = ControladorShProductos::ctrShowLimitProducts();
+					foreach ($productos as $producto) {?>
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="plantillas/Shoppy/Shoppy/images/product-01.jpg" alt="IMG-PRODUCT">
+							<img src="<?php echo $producto['imagen']?>" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Vista Rapida
@@ -397,7 +403,7 @@
 						<div class="block2-txt flex-w flex-t p-t-14">
 							<div class="block2-txt-child1 flex-col-l ">
 								<a href="product-detail" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Esprit Ruffle Shirt
+								<?php echo $producto['nombre'] ?>
 								</a>
 
 								<span class="stext-105 cl3">
@@ -417,7 +423,7 @@
 
 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item">
 					<!-- Block2 -->
-					<div class="block2">
+					<!--<div class="block2">
 						<div class="block2-pic hov-img0">
 							<img src="plantillas/Shoppy/Shoppy/images/product-16.jpg" alt="IMG-PRODUCT">
 
@@ -443,7 +449,8 @@
 									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="plantillas/Shoppy/Shoppy/images/icons/icon-heart-02.png" alt="ICON">
 								</a>
 							</div>
-						</div>
+						</div>-->
+						<?php } ?>
 					</div>
 				</div>
 			</div>

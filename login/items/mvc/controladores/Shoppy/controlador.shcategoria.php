@@ -1,11 +1,12 @@
 <?php
 
-class CtrCategoriaSh{
-
+class CtrCategoriaSh
+{
 	static public function ShMostrarCategoriasDestacadas($empresa, $limite){
+		
 		$tabla ="sh_categorias";
 
-		$respuesta = CategoriasSh::ShMostrarCategoriasDestacadas($tabla, $empresa, $limite);
+		$respuesta = CategoriasSh::shMostrarCategoriasDestacadas($tabla, $empresa, $limite);
 		
 		return $respuesta;
 	}
@@ -14,7 +15,7 @@ class CtrCategoriaSh{
 
 		$tabla = "sh_categorias";
 
-		$respuesta = CategoriaSh::ShMostrarCategorias($tabla, $item, $valor, $empresa);
+		$respuesta = CategoriaSh::shMostrarCategorias($tabla, $item, $valor, $empresa);
 
 		return $respuesta;
 

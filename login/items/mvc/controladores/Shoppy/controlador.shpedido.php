@@ -1,19 +1,19 @@
 <?php 
 
-class ControladorShPedidos{
-
+class CtrPedidosSh
+{
 	static public function ShMostarPedidos($item, $valor, $empresa){
 
 		$tabla = "sh_pedidos";
 
-		$respuesta = ShPedidos::MostrarPedidos($tabla, $item, $valor, $empresa);
+		$respuesta = ShPedidos::shMostrarPedidos($tabla, $item, $valor, $empresa);
 
 		return $respuesta;
 	}
 
 	static public function ShMostrarPedidosPaginados($datos){
 
-		$respuesta = ShPedidos::MostrarPedidosPaginados($datos);
+		$respuesta = ShPedidos::shMostrarPedidosPaginados($datos);
 
 		return $respuesta;
 	}
@@ -22,7 +22,7 @@ class ControladorShPedidos{
 
 		$tabla = "sh_pedidos_detalle";
 
-		$respuesta = ShPedidos::MostrarDetallePedido($tabla, $item, $valor, $empresa);
+		$respuesta = ShPedidos::shMostrarDetallePedido($tabla, $item, $valor, $empresa);
 
 		return $respuesta;
 	}
@@ -31,7 +31,7 @@ class ControladorShPedidos{
 
 		$tabla = "sh_pedidos_entregas";
 
-		$respuesta = ShPedidos::MostrarEntregaPedido($tabla, $item, $valor, $empresa);
+		$respuesta = ShPedidos::shMostrarEntregaPedido($tabla, $item, $valor, $empresa);
 
 		return $respuesta;
 	}
@@ -50,24 +50,24 @@ class ControladorShPedidos{
 			$tablaPedidos = "sh_pedidos";
 			$datosPedidos = array("folio" => $_POST["eFolioPago"], "estado" => $estadoPedido);
 
-			$respuestaPedido = ShPedidos::CambioEstadoPedido($tablaPedidos, $datosPedidos);
+			$respuestaPedido = ShPedidos::shCambioEstadoPedido($tablaPedidos, $datosPedidos);
 
 			$tablaEPedidos = "sh_pedidos_entregas";
 			$datosEPedido = array("folio" =>$_POST["eFolioPago"], "estado_entrega" => $estadoEntrega, "id_proveedor" => $_POST["proveedor"]);
 
-			$respuestaEntrega = ShPedidos::CambioEstadoEntrega($tablaEPedidos, $datosEPedido);
+			$respuestaEntrega = ShPedidos::shCambioEstadoEntrega($tablaEPedidos, $datosEPedido);
 
 			$item = "folio";
 			$valor = $_POST["eFolioPago"];
 			$id_proveedor = $_POST["proveedor"];
 
-			$comprobante = ShPedidos::MostrarComprobanteEfectivo($tabla, $item, $valor, $id_empresa);
+			$comprobante = ShPedidos::shMostrarComprobanteEfectivo($tabla, $item, $valor, $id_empresa);
 
 			if ($comprobante != false){
 
-				$respuesta = ShPedidos::EditarFichaPago($tabla, $datos);
+				$respuesta = ShPedidos::shEditarFichaPago($tabla, $datos);
 			} else {
-				$respuesta = ShPedidos::AgregarFichaPago($tabla, $datos);
+				$respuesta = ShPedidos::shAgregarFichaPago($tabla, $datos);
 			}
 
 		}

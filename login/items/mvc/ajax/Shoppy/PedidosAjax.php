@@ -9,7 +9,7 @@ class AjaxPedidos{
         $valor1 = $this -> folioNota;
         $valor2 = $this -> nota;
 
-        $respuesta = PedidosSh::AgregarAnotacion($tabla, $valor1, $valor2);
+        $respuesta = PedidosSh::shAgregarAnotacion($tabla, $valor1, $valor2);
 
         echo json_encode($respuesta);
 
